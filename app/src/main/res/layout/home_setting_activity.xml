@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                android:id="@+id/cancel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/done_string"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Name"
+                    android:textColor="@color/sub_title"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/home_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle_shape_background"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Home name"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/sub_text_color"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <LinearLayout
+                    android:id="@+id/theme_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:gravity="center_vertical"
+                        android:text="People"
+                        android:textColor="@color/sub_title"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_setting_users_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_shape_background"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/invite_people_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_shape_background"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/add_user"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:src="@drawable/icon_add_room"
+                            app:tint="@color/bold_text_color" />
+
+                        <TextView
+                            android:id="@+id/invite_people"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Invite People"
+                            android:textColor="@color/bold_text_color"
+                            android:textSize="@dimen/dimen_15dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="@string/invite_people_text"
+                        android:textColor="@color/sub_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="Themes"
+                        android:textColor="@color/sub_text_color"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/wify_themes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Home notes"
+                    android:textColor="@color/sub_title"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/home_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/rectangle_shape_background"
+                    android:gravity="top|left"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="@string/home_note_text"
+                    android:textColor="@color/sub_text_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/update_miniserver_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_shape_background"
+                            android:paddingLeft="10dp"
+                            android:text="Update Miniserver"
+                            android:textAllCaps="false"
+                            android:textColor="@color/bold_text_color"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/alexa_config_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:background="@drawable/rectangle_shape_background"
+                            android:paddingLeft="10dp"
+                            android:text="@string/alexa_start_config"
+                            android:textAllCaps="false"
+                            android:textColor="@color/bold_text_color" />
+
+                        <Button
+                            android:id="@+id/factory_reset_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:background="@drawable/rectangle_shape_background"
+                            android:paddingLeft="10dp"
+                            android:text="Factory Reset"
+                            android:textAllCaps="false"
+                            android:textColor="@color/error_text_color" />
+
+                        <Button
+                            android:id="@+id/remove_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:background="@drawable/rectangle_shape_background"
+                            android:paddingLeft="10dp"
+                            android:text="Remove Home"
+                            android:textAllCaps="false"
+                            android:textColor="@color/error_text_color"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

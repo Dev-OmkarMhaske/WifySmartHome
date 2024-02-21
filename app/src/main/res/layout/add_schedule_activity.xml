@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/cancel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textSize="@dimen/text_sub_heading"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/new_schedule_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Schedule"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Save"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_schedule_d" />
+
+                <EditText
+                    android:id="@+id/schedule_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:hint="Enter Schedule Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/add_schedule_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_shape_background"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_20dp"
+                    android:text="Add Accessories"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bold_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:text="Scenes"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/schedule_scenes_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Accessories"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/schedules_accessories_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rectangle_shape_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/white_bottom_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Enable"
+                            android:textSize="@dimen/text_sub_heading" />
+
+                        <Switch
+                            android:id="@+id/schedule_enable"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="90dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/white_bottom_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Select Time"
+                            android:textSize="@dimen/text_sub_heading" />
+
+                        <EditText
+                            android:id="@+id/add_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/white_bottom_border"
+                            android:hint="Click here to add time"
+                            android:textColor="@color/text_white"
+                            android:textColorHint="@color/sub_text_color"
+                            android:textSize="@dimen/text_sub_heading" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Select Days"
+                            android:textSize="@dimen/text_sub_heading" />
+
+
+                        <com.dpro.widgets.WeekdaysPicker
+                            android:id="@+id/weekdays"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="40dp"
+                            android:paddingTop="@dimen/dimen_10dp"
+                            app:highlight_color="@color/bold_text_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/remove_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_background"
+        android:text="Remove Schedule"
+        android:textAllCaps="false"
+        android:textColor="@color/error_text_color" />
+
+</RelativeLayout>

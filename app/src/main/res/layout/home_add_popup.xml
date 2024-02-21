@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_accessories"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Add Accessory"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/icon_add_accessories" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_room"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Add Room"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:src="@drawable/icon_addroom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_people"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Add People"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:src="@drawable/icon_addpeople" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_new_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Add New Home"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:src="@drawable/icon_addhome" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

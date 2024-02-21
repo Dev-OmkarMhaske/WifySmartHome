@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    constants strings -->
+    <string name="confirm_password_txt">Enter 123456</string>
+    <string name="valid_password_err_txt"> Please enter valid password.</string>
+    <string name="select_room_txt">Select Room</string>
+    <string name="validate_acc_name_txt">Please enter valid accessory name.</string>
+    <string name="validate_room_txt">Please select room to add accessories.</string>
+    <string name="validate_led_cnt_txt">Please enter valid LED count.</string>
+    <string name="wifi_connect_txt">Wi-Fi is not connected to</string>
+    <string name="restart_application_txt">Try to restart application.</string>
+    <string name="connection_lost_txt">Connection Lost.Try to restart application.</string>
+    <string name="connect_app_online_txt"> Try to connect application through online.</string>
+    <string name="connect_failed_txt">Connection failed.Restart Miniserver and try again!</string>
+    <string name="connect_internet_err">Try to connect internet</string>
+    <string name="valid_motion_txt">Please enter valid Motion name.</string>
+    <string name="select_scene_txt">Please select scene.</string>
+    <string name="select_scene_to_add_txt">Please select scene to add gesture.</string>
+    <string name="select_gesture_txt">Please select gesture to add.</string>
+    <string name="confirm_gesture_delete"> Are you sure you want to delete Gesture ?</string>
+    <string name="remove_gesture">Remove Gesture </string>
+
+    <string name="confirm_install_acc">Are you sure you want install accessory </string>
+
+    <string name="confirm_delete_scene">Are you sure you want to delete scene ?</string>
+    <string name="delete_scene">Delete Scene</string>
+    <string name="remove_scene">Remove scene</string>
+    <string name="validate_setting_txt">Please enter valid details to save settings.</string>
+    <string name="confirm_save_setting"> Are you sure you want to save Wi-Fi setting ?</string>
+
+    <string name="valid_mobile_txt">Please enter valid mobile number.</string>
+    <string name="valid_username_txt">Please enter valid user name.</string>
+    <string name="save_setting_str">Save Setting</string>
+
+    <string name="miniserver_sync_err">Miniserver not synced try to connect Miniserver.</string>
+    <string name="miniserver_installed_err">Miniserver not yet installed.</string>
+    <string name="miniserver_not_connect_err">Miniserver not connected.Try to connect Miniserver.</string>
+    <string name="miniserver_connection_lost_err">Miniserver connection lost.Try to connect Miniserver.</string>
+
+
+    <string name="delete_scene_schedule"> delete scene in schedule </string>
+    <string name="delete_scene_motion"> delete scene in motion </string>
+    <string name="curtain_paused_str">Curtain is paused.</string>
+
+    <string name="confirm_delete_schedule">Are you sure you want to delete schedule ? </string>
+    <string name="delete_schedule_txt"> Delete Schedule </string>
+    <string name="schedule_valid_time_txt">Please enter valid schedule time.</string>
+    <string name="schedule_valid_name_txt">Please enter valid schedule name.</string>
+
+    <string name="set_credentials_to_miniserver">Please set WiFi credentials to MINISERVER.</string>
+
+    <string name="curtain_open_str">Curtain is opened.</string>
+    <string name="curtain_close_str">Curtain is closed.</string>
+    <string name="valid_scene_name_err">Please enter valid scene name.</string>
+
+    <string name="confirm_delete_module">Are you sure you want to delete module ?</string>
+    <string name="delete_module_txt">Delete module</string>
+    <string name="delete_gesture_txt">Delete Gesture</string>
+
+    <string name="connect_home_str">Connect Home</string>
+    <string name="create_home_str"> Create Home</string>
+    <string name="confirm_factory_rst_str">Are you sure you want to factory reset ?</string>
+    <string name="factory_rst_txt">Factory Reset</string>
+
+    <string name="remove_person_str">Are you sure you want to delete person ?</string>
+    <string name="delete_person_str">Delete person</string>
+
+    <string name="valid_name_err">Please enter valid name.</string>
+    <string name="valid_number_err">Please enter valid phone number to proceed.</string>
+    <string name="network_err_txt">Please enable network to proceed.</string>
+    <string name="add_room_txt">Please add room.</string>
+    <string name="room_exist_err">Room name is already exist please try another one.</string>
+    <string name="valid_room_name_err">Please enter valid room name.</string>
+    <string name="confirm_change_wallpaper">Are you sure you want to remove room wallpaper ?</string>
+    <string name="remove_wallpaper_txt">Remove Wallpaper</string>
+    <string name="confirm_delete_room">Are you sure you want to delete room ?</string>
+    <string name="delete_room_txt">Delete Room</string>
+
+    <string name="home_create_success_str">Home created successfully</string>
+    <string name="confirm_home_connect_str">Are you sure you want to connect </string>
+    <string name="sync_home_err">Need to sync home data first before changing home.</string>
+    <string name="miniserver_update_success_str">Miniserver updated successfully.</string>
+
+    <string name="logout_success_str">Logout Successfully.</string>
+    <string name="connect_through_online_str">Try to connect Miniserver through router or online mode.</string>
+
+    <string name="app_name">Wify Smart Home</string>
+    <string name="get_otp_string"></string>
+
+    <string name="alexa_start_config">Start ALEXA Configuration</string>
+    <string name="alexa_stop_config">Stop ALEXA Configuration</string>
+
+    <string name="installation_start_config">Start Installation</string>
+    <string name="installation_stop_config">Stop Installation</string>
+
+    <string name="enter_otp">Please enter valid otp to proceed</string>
+    <string name="select_room_string">Please select room</string>
+
+    <string name="wify_txt">Wify Smart Home</string>
+    <string name="powered_by">Powered by</string>
+
+    <string name="cancel_string">Cancel</string>
+    <string name="save_string">Save</string>
+    <string name="done_string">Done</string>
+    <string name="back_string">Back</string>
+
+    <string name="no_internet_txt">Please enable network connection to add home.</string>
+
+    <string name="connect_miniserver_text">The device will open WiFi with "Smart Home" field with the button below to enter the configuration interface to connect the WiFi</string>
+    <string name="user_view_text_header">This user can control accessories while at this location.</string>
+    <string name="user_view_text_sub">A home hub is required to add or remove accessories, scenes or people.</string>
+
+    <string name="invite_people_text">All members in shared home can control and see updates from accessories.This may include others not showed in the list above.</string>
+    <string name="home_note_text">Notes will be shared with all users of the home.</string>
+    <string name="connecting_home_text">Connecting to home</string>
+
+    <string name="disable_fan_freeze_txt">Please disable the fan freeze to add fan in favourites.</string>
+    <string name="disable_fan_favourite_txt">Please remove the fan from favourite to enable feature freeze.</string>
+
+    <string name="disable_generic_freeze_txt">Please disable the generic freeze to add generic in favourites.</string>
+    <string name="disable_generic_favourite_txt">Please remove the generic from favourite to enable feature freeze.</string>
+
+    <string name="disable_power_freeze_txt">Please disable the power freeze to add power in favourites.</string>
+    <string name="disable_power_favourite_txt">Please remove the power from favourite to enable feature freeze.</string>
+
+    <string name="miniserver_not_install_txt">Miniserver is not install in the network.</string>
+    <string name="invitation_send_success_txt">Invitation send successfully.</string>
+    <string name="connect_home_txt">Please connect to home to add user.</string>
+    <string name="confirm_home_txt"> Are you sure you want to create Home ? Once home created you can\'t change home name.</string>
+</resources>

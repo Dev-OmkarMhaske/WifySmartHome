@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wify.smart.home">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".home.MainActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".room.RoomSettingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".room.AddRoomActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".home.HomeSettingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".home.AddUserActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".home.EditAccessorySettingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".home.AccessorySettingContainerActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.WiFiGestureTabContainerActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.MiniserverAddGestureActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.LoadingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".room.RoomAccessoriesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".scene.ListSceneActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".schedule.AddScheduleAccessoriesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".schedule.AddScheduleActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.AccessoriesSettingActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.ConnectMiniserverActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.ConnectMiniserverActivitySuccess"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".login.OtpVerifiedSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".scene.AddSceneAccessoriesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".scene.AddSceneActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.ConnectAccessoriesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.ConnectAccessoriesWithRoomActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.ConnectAccessoriesSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".room.RoomListActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".room.ChangeModuleLogoActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".home.SettingUserViewActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.RGBSettingContainerActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".login.ValidateOTPActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name=".activities.EditMotionActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activities.MotionAddAccessoriesActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name="org.eclipse.paho.android.service.MqttService"
+            android:exported="false" />
+
+        <service android:name="com.wify.smart.home.service.service" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

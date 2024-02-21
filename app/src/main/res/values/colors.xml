@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_background">#183936</color>
+    <color name="round_shape_color">#b3e2dc</color>
+
+    <color name="btn_outline_color">#0A52EE</color>
+
+    <color name="enter_your_phone_color">#2c2c2e</color>
+
+    <color name="input_background_color">#E6E6E6</color>
+    <color name="login_background">#008ba4</color>
+    <color name="button_background_color">#661C1C1E</color>
+    <color name="primary_color">#F7A31E</color>
+    <color name="bold_text_color">#F7A31E</color>
+    <color name="error_text_color">#E90C0C</color>
+    <color name="sub_text_color">#5B5B5E</color>
+    <color name="text_white">#ffffff</color>
+    <color name="bottom_tab_background">#801C1C1E</color>
+    <color name="popup_background">#CC1C1C1E</color>
+    <color name="rectangle_shape_background">#2c2c2e</color>
+    <color name="App_edit_background">#1C1C1E</color>
+    <color name="white_bottom_border_color">#21FFFFFF</color>
+    <color name="sub_title">#5B5B5E</color>
+    <color name="room_tiles_color">#80000000</color>
+    <color name="room_sub_title">#939395</color>
+    <color name="tab_bottom_border_color">#ffffff</color>
+    <color name="text_color_hint">#B35B5B5E</color>
+    <color name="text_black">#000000</color>
+    <color name="black_transparent">#80000000</color>
+
+    <color name="fan_popup_background">#E6000000</color>
+</resources>

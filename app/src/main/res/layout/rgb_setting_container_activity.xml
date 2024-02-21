@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rgb_layouts"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/save_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Save"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <TextView
+            android:id="@+id/device_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:text="RGB"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:scrimAnimationDuration="0"
+            app:tabBackground="@drawable/tab_background_selected"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/text_white"
+            app:tabTextColor="@color/sub_text_color" />
+
+<!--
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            tools:layout_editor_absoluteX="8dp" />
+-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            tools:layout_editor_absoluteX="8dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rgb_layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:text="Include in favourite"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <Switch
+                android:id="@+id/include_in_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alexa_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:text="Enable Alexa"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <Switch
+                android:id="@+id/alexa_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:gravity="right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <TextView
+                    android:id="@+id/save_motion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:gravity="right"
+                    android:text="Save"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/motion_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:src="@drawable/icon_motion_d" />
+
+                <EditText
+                    android:id="@+id/motion_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapWords"
+                    android:text="Motion"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_motion_accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:text="Add Accessories"
+                android:textAllCaps="false"
+                android:textColor="@color/bold_text_color" />
+
+            <TextView
+                android:id="@+id/scene_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="Scenes"
+                android:visibility="gone"
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/motion_scenes_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:visibility="gone"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessories"
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/motion_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/white_bottom_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Enable"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <Switch
+                        android:id="@+id/motion_enable"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="90dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/white_bottom_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Active Time"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <RadioGroup
+                        android:id="@+id/r_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="62dp"
+                        android:layout_toRightOf="@+id/ActiveTimeTitle"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/always"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/bold_text_color"
+                            android:text="Always"
+                            android:textColor="@color/text_white" />
+
+                        <RadioButton
+                            android:id="@+id/periodic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20dp"
+                            android:buttonTint="@color/bold_text_color"
+                            android:text="Periodic"
+                            android:textColor="@color/text_white" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/startTimeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bottom_border">
+
+                    <TextView
+                        android:id="@+id/startTimeTitle"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:gravity="center_vertical"
+                        android:text="Start Time : "
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <EditText
+                        android:id="@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/startTimeTitle"
+                        android:background="@null"
+                        android:hint="Enter start time"
+                        android:textColor="@color/text_white"
+                        android:textColorHint="@color/sub_text_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/endTimeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bottom_border">
+
+                    <TextView
+                        android:id="@+id/endTimeTitle"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:gravity="center_vertical"
+                        android:text="End Time : "
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_sub_heading" />
+
+                    <EditText
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/endTimeTitle"
+                        android:background="@null"
+                        android:hint="Enter end time"
+                        android:textColor="@color/text_white"
+                        android:textColorHint="@color/sub_text_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bottom_border">
+
+                    <TextView
+                        android:id="@+id/timePeriodTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Time Period In Sec : "
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_white"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/time_period"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@+id/timePeriodTitle"
+                        android:background="@null"
+                        android:hint="Enter time period in sec"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/text_white"
+                        android:textColorHint="@color/sub_text_color" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fan_popup_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="@dimen/text_sub_heading"
+            android:layout_gravity="right"
+            android:textColor="@color/bold_text_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/rectangle_shape_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/white_bottom_border"
+                >
+
+                <TextView
+                    android:id="@+id/fan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_sub_heading"/>
+
+                <TextView
+                    android:id="@+id/fan_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speed Level : "
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_sub_heading"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/freeze_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/white_bottom_border">
+
+                <TextView
+                    android:id="@+id/fan_freeze_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freeze"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_sub_heading"/>
+
+                <Switch
+                    android:id="@+id/fan_freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/dimen_20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fav_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/white_bottom_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include in favourite"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_sub_heading"/>
+
+                <Switch
+                    android:id="@+id/include_in_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/dimen_20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alexa_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/white_bottom_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Alexa"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_sub_heading"/>
+
+                <Switch
+                    android:id="@+id/alexa_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/dimen_20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <abak.tr.com.boxedverticalseekbar.BoxedVertical
+                android:id="@+id/boxed_vertical"
+                android:layout_width="80dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                app:backgroundColor="@color/rectangle_shape_background"
+                app:libCornerRadius="20"
+                android:layout_weight="1"
+                app:defaultValue="0"
+                app:imageEnabled="false"
+                app:max="5"
+                app:progressColor="@color/bold_text_color"
+                app:step="1"
+                app:textBottomPadding="350"
+                app:textColor="@android:color/black"
+                app:textEnabled="false"
+                app:textSize="17dp"
+                app:touchDisabled="true" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="-90dp"
+                android:layout_weight="1"
+                android:background="@color/text_white"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="-61dp"
+                android:background="@color/text_white"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="-60.5dp"
+                android:background="@color/text_white"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="80dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="-59.5dp"
+                android:background="@color/text_white"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

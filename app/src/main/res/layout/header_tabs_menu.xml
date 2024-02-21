@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:alpha="1">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/icon_top_home" />
+
+
+        <TextView
+            android:id="@+id/plusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-light"
+            android:text="+"
+            android:textSize="45dp" />
+
+        <!-- <ImageView
+             android:id="@+id/plusIcon"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="start"
+             android:layout_marginRight="20dp"
+             android:clickable="true"
+             android:src="@drawable/icon_add_room" />-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout">
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

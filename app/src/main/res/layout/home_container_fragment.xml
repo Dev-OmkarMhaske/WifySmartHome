@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/miniserver_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/iocn_miniserver" />
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:textColor="@color/error_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/miniserver_install_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wify Home"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_header" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="MINISERVER"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_light_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/miniserver_setting"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:gravity="right"
+                        android:src="@drawable/icon_setting" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-25dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <ProgressBar
+                        android:id="@+id/offline_loader"
+                        android:layout_width="99dp"
+                        android:layout_height="99dp"
+                        android:layout_marginRight="-90dp"
+                        android:indeterminate="true"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/miniserverImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/iocn_miniserver" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:src="@drawable/icon_online" />
+
+                        <TextView
+                            android:id="@+id/online_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_20dp"
+                            android:text="Online : "
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:src="@drawable/icon_offline" />
+
+                        <TextView
+                            android:id="@+id/offline_cnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="Offline : "
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monitor"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:background="@drawable/rectangle_shape_light_background"
+                android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                     />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/usersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="Users"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/user_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/next_schedule_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="Next Schedule"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/next_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_light_background"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_10dp"
+                android:text="Morning 8:30AM"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/sceneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="One Tap Scenes"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/favourites_scene_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/FavouriteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourite Accessories"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/favourites_accessories_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:scrollbars="none"  />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

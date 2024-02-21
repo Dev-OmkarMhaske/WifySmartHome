@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add gesture"
+        android:textAllCaps="false"
+        android:textColor="@color/bold_text_color"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_background"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_gesture_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

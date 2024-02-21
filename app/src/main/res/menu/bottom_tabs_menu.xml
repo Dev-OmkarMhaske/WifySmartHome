@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home_tab"
+        android:title="Home"
+        app:labelVisibilityMode="unlabeled"
+        app:itemHorizontalTranslationEnabled="false" />
+
+    <item
+        android:id="@+id/navigation_room"
+        android:icon="@drawable/icon_room_tab"
+        android:title="Room"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="false" />
+
+    <item
+        android:id="@+id/navigation_function"
+        android:icon="@drawable/icon_function_tab"
+        android:title="Function"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="false" />
+
+</menu>

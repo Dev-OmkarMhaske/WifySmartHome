@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/installation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/next_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center_vertical"
+            android:text="next"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <LinearLayout
+            android:id="@+id/rgb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="RGB type :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <RadioGroup
+                    android:id="@+id/rgb_type_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/ActiveTimeTitle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sim_rgb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/bold_text_color"
+                        android:checked="true"
+                        android:text="Simple LED"
+                        android:textColor="@color/text_white" />
+
+                    <RadioButton
+                        android:id="@+id/pro_rgb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:buttonTint="@color/bold_text_color"
+                        android:text="Pro LED"
+                        android:textColor="@color/text_white" />
+
+                    <RadioButton
+                        android:id="@+id/single_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:buttonTint="@color/bold_text_color"
+                        android:text="Single Color"
+                        android:textColor="@color/text_white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/led_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:hint="Enter LED count"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="144"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/sub_text_color"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rooms"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/room_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/module_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:text="Please select below module"
+            android:textColor="@color/sub_text_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_shape_background">
+
+            <Spinner
+                android:id="@+id/generic_points_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading"
+                android:theme="@style/mySpinnerItemStyle"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parent"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/parent_list_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

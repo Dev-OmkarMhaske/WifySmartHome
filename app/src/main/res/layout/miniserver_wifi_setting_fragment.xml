@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:src="@drawable/iocn_miniserver" />
+
+        <LinearLayout
+            android:id="@+id/error_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="try to connect Miniserver by wifi mode"
+                android:textColor="@color/error_text_color">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/networKLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:text="Network name :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/networkNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:hint="Enter network name"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/sub_text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:text="Password :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:hint="Enter password here"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/sub_text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:text="IP Address :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/ipAddress_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:hint="Enter IP address"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/sub_text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:text="Gateway :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <EditText
+                    android:id="@+id/gateway_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/white_bottom_border"
+                    android:hint="Enter WiFi gateway"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/sub_text_color" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/save_miniserver_setting"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/bold_text_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

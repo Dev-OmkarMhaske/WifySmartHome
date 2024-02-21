@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "741193643612",
+    "firebase_url": "https://wifysmarthome-default-rtdb.firebaseio.com",
+    "project_id": "wifysmarthome",
+    "storage_bucket": "wifysmarthome.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741193643612:android:740233353aa3a8422cd899",
+        "android_client_info": {
+          "package_name": "com.wify.smart.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741193643612-fki0j7823n2pejofa1hc8mrejt8pf8ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsRn4RQwfBYvCVZsj7UggKZETXIMyYw4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741193643612-fki0j7823n2pejofa1hc8mrejt8pf8ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

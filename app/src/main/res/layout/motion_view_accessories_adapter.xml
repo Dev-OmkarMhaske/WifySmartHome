@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/generic_tile_background"
+        android:layout_width="20mm"
+        android:layout_height="21mm"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_white_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/generic_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="6mm"
+            android:layout_marginTop="-14dp"
+            android:src="@drawable/icon_setting"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/generic_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:src="@drawable/icon_light_fill_a" />
+
+        <TextView
+            android:id="@+id/generic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="Generic"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_15dp" />
+
+        <TextView
+            android:id="@+id/generic_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:textColor="@color/text_black"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rgb_tile_background"
+        android:layout_width="20mm"
+        android:layout_height="21mm"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_white_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/rgb_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="6mm"
+            android:layout_marginTop="-14dp"
+            android:src="@drawable/icon_setting" />
+
+        <ImageView
+            android:id="@+id/rgb_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:src="@drawable/icon_rgb_a" />
+
+        <TextView
+            android:id="@+id/rgb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="RGB"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_15dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fan_tile_background"
+        android:layout_width="20mm"
+        android:layout_height="21mm"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_white_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/fan_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="6mm"
+            android:src="@drawable/icon_setting" />
+
+        <ImageView
+            android:id="@+id/fan_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:src="@drawable/icon_fan_a" />
+
+        <TextView
+            android:id="@+id/fan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="FAN"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_15dp" />
+
+        <LinearLayout
+            android:id="@+id/fan_speed_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/fan_speed_level_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:src="@drawable/icon_white_circle" />
+
+            <ImageView
+                android:id="@+id/fan_speed_level_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:src="@drawable/icon_white_circle" />
+
+            <ImageView
+                android:id="@+id/fan_speed_level_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:src="@drawable/icon_white_circle" />
+
+            <ImageView
+                android:id="@+id/fan_speed_level_4"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:src="@drawable/icon_white_circle" />
+
+            <ImageView
+                android:id="@+id/fan_speed_level_5"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/icon_white_circle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/curtain_tile_background"
+        android:layout_width="20mm"
+        android:layout_height="21mm"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_white_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/curtain_setting"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="6mm"
+            android:layout_marginTop="-14dp"
+            android:src="@drawable/icon_setting" />
+
+        <ImageView
+            android:id="@+id/curtain_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:src="@drawable/icon_curtain_a" />
+
+        <TextView
+            android:id="@+id/curtain_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="Curtain"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/power_tile_background"
+        android:layout_width="20mm"
+        android:layout_height="21mm"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_white_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/power_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="6mm"
+            android:layout_marginTop="-14dp"
+            android:src="@drawable/icon_setting"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/power_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:src="@drawable/icon_ac_a" />
+
+        <TextView
+            android:id="@+id/power_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="Power"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

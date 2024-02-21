@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel_string"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Add Room"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_sub_heading"/>
+
+            <TextView
+                android:id="@+id/save_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/save_string"
+                android:textSize="@dimen/text_sub_heading"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rooms"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textSize="@dimen/text_sub_heading"
+            android:textColor="@color/sub_text_color"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/room_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"/>
+
+<!--
+        <Button
+            android:id="@+id/remove_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/error_text_color"
+            android:background="@drawable/rectangle_shape_background"
+            android:text="Remove room"
+            android:textAllCaps="false" />
+-->
+
+    </LinearLayout>
+
+</ScrollView>

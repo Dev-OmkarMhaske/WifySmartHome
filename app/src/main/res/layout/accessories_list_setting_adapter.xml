@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/white_bottom_border"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/acc_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:src="@drawable/icon_light_fill_d" />
+
+    <TextView
+        android:id="@+id/acc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_weight="3.8"
+        android:text="Acc name"
+        android:textSize="@dimen/text_sub_heading" />
+
+    <ImageView
+        android:id="@+id/acc_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:src="@drawable/icon_delete_accessories" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                android:id="@+id/back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Back"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Save"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="@drawable/rectangle_shape_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/white_bottom_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/accessories_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="3.9"
+                android:text="Accessory : "
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_sub_heading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/white_bottom_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/accessory_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="3.9"
+                android:text="State : "
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_sub_heading" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:text="Accessories"
+        android:textSize="@dimen/text_sub_heading" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc_txt"
+        android:layout_marginBottom="80dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/accessory_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:orientation="vertical"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/restart_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center"
+            android:text="Restart"
+            android:textAllCaps="false"
+            android:textColor="@color/bold_text_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/reset_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="@color/error_text_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

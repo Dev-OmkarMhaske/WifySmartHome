@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/room_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/room_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/dimen_10dp"
+            android:button="@drawable/custom_checkbox" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reception"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_sub_heading" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rectangle_shape_background"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/accessories_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:button="@drawable/custom_checkbox" />
+
+        <TextView
+            android:id="@+id/accessories_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="Reception"
+            android:textSize="@dimen/dimen_15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel_string"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Add Room"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <TextView
+            android:id="@+id/save_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/save_string"
+            android:textSize="@dimen/text_sub_heading" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Room name"
+            android:textColor="@color/sub_title"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <EditText
+            android:id="@+id/add_room_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center_vertical"
+            android:inputType="textCapWords"
+            android:paddingLeft="10dp"
+            android:text="Reception"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/blue_miniserver"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/choose_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Choose photo"
+            android:textAllCaps="false"
+            android:textColor="@color/bold_text_color" />
+
+        <Button
+            android:id="@+id/remove_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Remove photo"
+            android:textAllCaps="false"
+            android:textColor="@color/error_text_color"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/remove_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Remove Room"
+                android:textAllCaps="false"
+                android:textColor="@color/error_text_color"
+              />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

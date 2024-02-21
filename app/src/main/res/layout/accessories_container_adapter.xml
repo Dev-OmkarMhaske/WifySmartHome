@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bottom_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_weight="2.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accessory_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessory : "
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/acc_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : "
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/dimen_15dp" />
+
+            <TextView
+                android:id="@+id/accessory_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial no : "
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/dimen_15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/accessory_setting"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/icon_home_setting" />
+
+    </LinearLayout>
+
+</LinearLayout>

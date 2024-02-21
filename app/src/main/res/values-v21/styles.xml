@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:windowBackground">@drawable/app_background_3</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar2">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:windowBackground">@drawable/app_background_2</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar3">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:windowBackground">@drawable/app_background_1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar4">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:windowBackground">@drawable/app_background_4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar5">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:windowBackground">@drawable/app_background_5</item>
+    </style>
+
+</resources>

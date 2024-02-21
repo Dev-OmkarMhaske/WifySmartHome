@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/back"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/icon_back"-->
+<!--                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="Network configuration"
+                android:textSize="@dimen/text_sub_heading" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="Success!"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_header" />
+
+        <ImageView
+            android:id="@+id/miniserver_success"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_above="@+id/wifi_layout"
+            android:src="@drawable/miniserver_connect_success" />
+
+        <Button
+            android:id="@+id/miniserver_success_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:text="Complete"
+            android:textAllCaps="false"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

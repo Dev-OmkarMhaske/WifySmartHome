@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homes_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/home_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/icon_check_home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.3"
+            android:text="Home setting"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:id="@+id/home_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:src="@drawable/icon_home_setting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/icon_check_home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.3"
+            android:text="Room setting"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:id="@+id/room_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:src="@drawable/icon_home_setting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accessory_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/white_bottom_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/icon_check_home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.3"
+            android:text="Accessory setting"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:id="@+id/accessory_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:src="@drawable/icon_home_setting" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/icon_check_home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.3"
+            android:text="Logout"
+            android:textSize="@dimen/input_text_size" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:src="@drawable/icon_logout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

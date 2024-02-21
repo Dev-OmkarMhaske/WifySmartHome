@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_shape_background"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/gesture_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_up_gesture"
+            />
+
+        <TextView
+            android:id="@+id/gesture_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_sub_heading"
+            android:text="gesture name"/>
+
+        <RadioButton
+            android:id="@+id/gesture_radio"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.7"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_gravity="center_vertical"
+            android:buttonTint="@color/bold_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

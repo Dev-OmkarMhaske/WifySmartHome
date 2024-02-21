@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/accessories_check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:button="@drawable/custom_checkbox"
+            />
+
+        <TextView
+            android:id="@+id/access_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light -1"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textSize="@dimen/text_sub_heading"/>
+
+    </LinearLayout>
+
+</LinearLayout>

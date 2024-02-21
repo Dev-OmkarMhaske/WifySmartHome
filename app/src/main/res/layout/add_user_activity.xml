@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/cancel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/cancel_string"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Add People"
+                android:layout_weight="2.5"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <TextView
+                android:id="@+id/save_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="Send invite"
+                android:textColor="@color/bold_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_box_size"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+                android:text="Enter name : "
+                android:textColor="@color/sub_title"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:inputType="textCapWords"
+                android:background="@drawable/white_bottom_border"
+                android:gravity="left|center_vertical"
+                android:hint="Enter user name"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/sub_text_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_box_size"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+                android:text="Mobile no : "
+                android:textColor="@color/sub_title"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <EditText
+                android:id="@+id/users_number"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="@drawable/white_bottom_border"
+                android:gravity="left|center_vertical"
+                android:hint="Enter mobile number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/sub_text_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

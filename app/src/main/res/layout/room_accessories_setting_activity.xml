@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_edit_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/back_string"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <TextView
+                    android:id="@+id/save_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/save_string"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/room_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:text="Reception"
+                android:textSize="@dimen/text_header" />
+
+            <TextView
+                android:id="@+id/module_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:text="Generic Module"
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <LinearLayout
+                android:id="@+id/show_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/room_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Room :"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <Spinner
+                    android:id="@+id/room_drop_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/bold_text_color"
+                    android:prompt="@string/select_room_string"
+                    android:textSize="@dimen/text_sub_heading"
+                    android:theme="@style/mySpinnerItemStyle" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/led_cnt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:text="Enter LED's Count"
+                android:textColor="@color/sub_text_color"
+                android:textSize="@dimen/text_sub_heading"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/led_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:hint="Enter LED's count"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/sub_text_color"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/module_vise_accessories_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/rectangle_shape_background"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

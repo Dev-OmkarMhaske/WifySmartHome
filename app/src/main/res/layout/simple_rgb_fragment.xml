@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:cardBackgroundColor="@color/rectangle_shape_background"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/colorImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300px" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_shape_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_bottom_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/red_txt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Red :"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <SeekBar
+                android:id="@+id/seekBarR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressBackgroundTint="@color/text_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/white_bottom_border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/green_txt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Green :"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <SeekBar
+                android:id="@+id/seekBarG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressBackgroundTint="@color/text_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/blue_txt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Blue :"
+                android:textSize="@dimen/text_sub_heading" />
+
+            <SeekBar
+                android:id="@+id/seekBarB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressBackgroundTint="@color/text_white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

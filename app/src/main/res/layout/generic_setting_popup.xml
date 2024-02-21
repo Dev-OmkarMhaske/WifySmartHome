@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fan_popup_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Done"
+            android:textColor="@color/bold_text_color"
+            android:textSize="@dimen/text_sub_heading" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/rectangle_shape_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/generic_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Generic"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/freeze_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Freeze"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <Switch
+                    android:id="@+id/generic_freeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fav_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Include in favourite"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <Switch
+                    android:id="@+id/include_in_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alexa_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Enable Alexa"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <Switch
+                    android:id="@+id/alexa_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dimmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Dimmer Controllers"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <TextView
+                    android:id="@+id/dimmer_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="40dp"
+                    android:gravity="right"
+                    android:text="2"
+                    android:textSize="@dimen/text_sub_heading" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dimmer_color_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bottom_border"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="Warm White"
+                    android:textSize="@dimen/text_sub_heading" />
+
+                <Switch
+                    android:id="@+id/dimmer_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dimmer_intensity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <abak.tr.com.boxedverticalseekbar.BoxedVertical
+                android:id="@+id/dimmer_intensity"
+                android:layout_width="80dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                app:backgroundColor="@color/rectangle_shape_background"
+                app:defaultValue="0"
+                app:imageEnabled="false"
+                app:libCornerRadius="20"
+                app:max="255"
+                app:min="0"
+                app:progressColor="@color/bold_text_color"
+                app:step="1"
+                app:textBottomPadding="350"
+                app:textColor="@android:color/black"
+                app:textEnabled="false"
+                app:textSize="17dp"
+                app:touchDisabled="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
